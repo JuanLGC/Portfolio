@@ -14,9 +14,7 @@ function App() {
   return (
     <div className="container-fluid">
       {/* welcome view */}
-      
-        <video className="video-background" src={starsVideo} autoPlay loop muted id="video-background" />
-      
+      <div className="main-menu-background">
         <div className="overlay-video-background" >
           <div className="main-text">
             <h1 className="greeting">Hi! I'm <b className="name-in-title">Juan Gonzalez</b>.</h1>
@@ -24,6 +22,7 @@ function App() {
             <div className="main-text-button">Check my work</div>
           </div>
         </div>
+      </div>
       
       {/* navbar */}
       <nav className="navbar navbar-expand-lg">
@@ -70,11 +69,13 @@ function App() {
         <div className="info-about-and-skills">
           <div className="info-about">
             <h1 className="about-title">Who am I?</h1>
-            <div className="photo-about" />
-            <p>
-              As you read before, I am a full-stack developer passionate about frontend design and backend functionalities. I studied computer science in France
-              and complemented this studies in a bootcamp in Madrid.
-            </p>
+            <div className="info-about-body">
+              <div className="photo-about" />
+              <p className="info-text">
+                As you read before, I am a full-stack developer passionate about frontend design and backend functionalities. I studied computer science in France
+                and complemented this studies in a bootcamp in Madrid.
+              </p>
+            </div>
           </div>
           <div className="info-about">
             <h1 className="about-title">Skills</h1>

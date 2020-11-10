@@ -12,7 +12,13 @@ body {
   padding: 0;
 }
 
-.video-box{
+.main-menu-background {
+  background-image: url("./images/python.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* .video-box{
   padding: 0;
   margin: 0;
   height: 100vh;
@@ -23,13 +29,13 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  /* max-height: 100vh; */
+  max-height: 100vh;
   min-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-}
+} */
 
 .overlay-video-background {
   display: flex;
@@ -38,7 +44,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.534);
+  background-color: rgba(0, 0, 0, 0.768);
   z-index: 2
 }
 
@@ -178,16 +184,30 @@ p {
   align-items: flex-start;
   width: 100%;
   margin: 0;
+  margin-top: 4rem;
   padding: 0;
 }
 
 .info-about {
   width: 50%;
-  padding: 1rem;
+  padding: 0.5rem;
   color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.info-about-body {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+}
+
+.info-text {
+  width: 60%;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
 }
 
 .about-title {
@@ -200,8 +220,8 @@ p {
   background-position: center;
   border-radius: 100%;
   margin: .5rem 0 ;
-  height: 8rem;
-  width: 8rem;
+  height: 10rem;
+  width: 10rem;
   filter: drop-shadow(0rem 0rem 1rem #2d565c);
   
 }
